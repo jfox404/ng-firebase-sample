@@ -1,0 +1,11 @@
+<h1>My Cars</h1>
+<div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="32px" fxLayoutAlign="center" fxLayoutWrap="wrap">
+  <app-car-card [car]="car" *ngFor="let car of cars"></app-car-card>
+
+  <mat-card class="add-card">
+    <mat-card-content>
+      <p>Add Car</p>
+      <mat-icon (click)="openCarDialog({})">add</mat-icon>
+    </mat-card-content>
+  </mat-card>
+</div>
